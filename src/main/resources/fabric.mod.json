@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "FirstMod",
+	"description": "This is my first fabric mod!",
+	"authors": [
+		"Bricks Everywhere"
+	],
+	"contact": {
+		"homepage": "https://brickseverywhere.com/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All rights reserved",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.brickseverywhere.firstmod.FirstMod"
+		],
+		"fabric-datagen": [
+			"com.brickseverywhere.firstmod.FirstModDataGenerator"
+		],
+		"client": [
+			"com.brickseverywhere.firstmod.FirstModClient"
+		]
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
